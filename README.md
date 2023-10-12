@@ -1,7 +1,7 @@
 SAR2Optical
 ==============================
 
-This repository hosts a collection of experiments aimed at testing the effectiveness of transcoding Synthetic Aperture Radar (SAR) imagery to optical ones. The focus of these experiments is on solving the challenge posed by the similarity of waterbodies and sand landcover in SAR images, particularly in desert areas.
+This repository hosts a collection of experiments aimed at testing the effectiveness of transcoding Synthetic Aperture Radar (SAR) imagery to optical ones. The focus of these experiments is on solving the challenge of waterbody extraction in arid regions posed by the similarity of the intensity values of waterbodies and sand landcover in SAR images.
 
 Project Organization
 ------------
