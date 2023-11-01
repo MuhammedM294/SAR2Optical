@@ -1,7 +1,7 @@
 SAR2Optical
 ==============================
 
-This repository hosts a collection of experiments to test the effectiveness of transcoding Synthetic Aperture Radar (SAR) imagery to optical ones. The objective of these experiments is to solve the challenge of the similarity of backscattering properties between waterbodies and certain sandy land covers in arid regions in SAR imagery. This similarity creates a perplexing situation for image interpretation. Traditional visual analysis methods often struggle to differentiate between these two land cover types accurately. This leads to ambiguity in identifying and delineating waterbodies and sandy areas, constraining the precision of various applications like environmental monitoring, land use planning, and disaster management.
+This repository hosts a collection of experiments to test the effectiveness of transcoding Synthetic Aperture Radar (SAR) imagery to optical ones in landcover classification applications. The objective of these experiments is to solve the challenge of the similarity of backscattering properties between waterbodies and certain sandy land covers in arid regions in SAR imagery. This similarity creates a perplexing situation for image interpretation. Traditional visual analysis methods often struggle to differentiate between these two land cover types accurately. This leads to ambiguity in identifying and delineating waterbodies and sandy areas, constraining the precision of various applications like environmental monitoring, land use planning, and disaster management.
 
  
 ### Experiment 1: Transcoding Sentinel-1 SAR Image VV Band to NIR Band of Sentinel-2
