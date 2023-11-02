@@ -1,7 +1,7 @@
 SAR2Optical
 ==============================
 
-This project aims to test the effectiveness of transcoding Synthetic Aperture Radar (SAR) imagery to optical ones, and its practicality in waterbody mapping applications. The main objective is to solve the challenge of the similarity of backscattering properties between waterbodies and certain sandy land covers in arid regions in SAR imagery. This similarity creates a perplexing situation for image interpretation. Traditional visual analysis methods often struggle to differentiate between these two land cover types accurately. This leads to ambiguity in identifying and delineating waterbodies and sandy areas, constraining the precision of various applications like environmental monitoring, land use planning, and disaster management.
+This project aims to test the effectiveness of transcoding Synthetic Aperture Radar (SAR) imagery to optical ones, and its practicality in waterbody mapping applications. The main objective is to explore whether this approach can solve the challenge of the similarity of backscattering properties between waterbodies and certain sandy land covers in arid regions in SAR imagery. This similarity creates a perplexing situation for image interpretation. Traditional visual analysis methods often struggle to differentiate between these two land cover types accurately. This leads to ambiguity in identifying and delineating waterbodies and sandy areas, constraining the precision of various applications like environmental monitoring, land use planning, and disaster management.
 
 ## Table of Contents
 - [**Study Area**](#study_area)
