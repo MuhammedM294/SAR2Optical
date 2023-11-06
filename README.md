@@ -10,6 +10,7 @@ This project leverages the power of a cutting-edge technique called Conditional 
 - [**Experiment 1:Transcoding Sentinel-1 SAR Image VV Band to NIR Band of Sentinel-2**](#vv_b8)
    - [**Dataset**](#b8_dataset)
    - [**Dataset Samples**](#dataset_samples)
+   - [**Training Configuration**](#train_config)
 
 ### Study Area <a name="study_area"></a>
 
@@ -30,12 +31,30 @@ In this experiment, a pair of SAR-Optical datasets were created from the Sentine
 2. Temporal Variations: This included images from the same study area captured in different years to examine how well the model handles changes over time within a specific location. It's a crucial test to ensure the model's consistency and adaptability across various temporal contexts.
 
 #### 1.2 Dataset Samples<a name ="dataset_samples"></a>:
-**Our Source: Sentinel-1 SAR VV Band (Toushka Lakes, Southern Egypt), Acquisition Date: 06-12-2021**
+**Source:** Sentinel-1 SAR VV Band (Toushka Lakes, Southern Egypt), Acquisition Date: 06-12-2021
 <img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/11d51ae8-2734-4925-8589-f31bfbd93a89" width = "800" height = "600" />
 
-**Our Target: Sentinel-2 NIR Band (Toushka Lakes, Southern Egypt), Acquisition Date: 04-12-2021**
+**Target:** Sentinel-2 NIR Band (Toushka Lakes, Southern Egypt), Acquisition Date: 04-12-2021
 <img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/ab0a7f63-cf29-4a8b-9a45-127e40a324c4" width = "800" height = "600" />
 
+#### 1.3 Training Configuration <a name ="train_config"></a>:
+
+The generator network [architecture](https://github.com/MuhammedM294/SAR2Optical/blob/ff48411b85650c46562398f09700244d220a7fbb/src/models/model.py#L49) utilized UNet-style blocks, combining downsampling ([UNetDown](https://github.com/MuhammedM294/SAR2Optical/blob/ff48411b85650c46562398f09700244d220a7fbb/src/models/model.py#L16)) and upsampling ([UNetUp](https://github.com/MuhammedM294/SAR2Optical/blob/ff48411b85650c46562398f09700244d220a7fbb/src/models/model.py#L30)) layers. The downsampling layers incorporated 2D convolutional operations, Leaky Rectified Linear Unit (LeakyReLU) activation with a slope of 0.2, optional dropout for regularization, and instance normalization for stability during training. Upsampling layers utilized transpose convolution operations, ReLU activation, and instance normalization. Skip connections were established between corresponding layers in the encoder and decoder sections, enhancing the flow of gradient information during backpropagation.
+
+The [discriminator](https://github.com/MuhammedM294/SAR2Optical/blob/ff48411b85650c46562398f09700244d220a7fbb/src/models/model.py#L95) network consists of multiple convolutional blocks, each performing downsampling operations. These blocks use 2D convolutional layers, leaky rectified linear unit (LeakyReLU) activation, and optional instance normalization.
+
+| **Component**             | **Architecture**                                                   |
+|---------------------------|---------------------------------------------------------------------|
+| **Optimizer (Generator)** | Adam (lr=0.0002, betas=(0.5, 0.999))                                |
+| **Optimizer (Discriminator)** | Adam (lr=0.0002, betas=(0.5, 0.999))                            |
+| **Training Epochs**       | 50                                                                  |
+| **GPU**                   | NVIDIA GeForce GTX 1660 Ti                                        |
+| **Generator**             | UNet Architecture                                                  |
+| **Downsampling Layers**   | 2D Convolution, LeakyReLU (slope: 0.2), Optional Dropout, Instance Normalization |
+| **Upsampling Layers**     | Transpose Convolution, ReLU Activation, Instance Normalization      |
+| **Discriminator**         | Convolutional Blocks with LeakyReLU (slope: 0.2) and Instance Normalization |
+| **Input Channels**        | 1 (Generator), 2 (Discriminator)                                    |
+| **Output Channels**       | 1 (for both Generator and Discriminator)                                                  |
 
 
 
