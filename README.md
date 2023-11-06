@@ -129,7 +129,7 @@ In this experiment, the generator architecture is enhanced by integrating digita
 
 #### 2.1 Dataset <a name ="b8_dem_dataset"></a>
 
-For this experiment, the same dataset is utilized as in the first study, incorporating digital elevation models specific to each study area. By integrating these elevation data alongside the VV band of SAR images, our model generated outputs comprising NIR band optical data and water masks extracted from the SAR imagery. 
+For this experiment, the same dataset is utilized as in the first study along with incorporating digital elevation models specific to each study area. By integrating these elevation data alongside the VV band of SAR images, our model generated outputs comprising NIR band optical data and water masks extracted from the SAR imagery. 
 
 #### 2.2 Training Configuration <a name ="train_dem_config"></a>
 
@@ -150,22 +150,31 @@ For this experiment, the same dataset is utilized as in the first study, incorpo
 #### 2.3 Results Samples (Patch Level)<a name ="b8__dem_result"></a>:
 ##### 2.3.1 Temporal Variations Catagory<a name ="temp_dem"></a>:
 
+*Toushka Lakes, Southern Egypt*
+
+Sentinel-2, Acquistation Date 04-12-2021
+
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/3cb60e98-038d-4c28-b9a0-a11d4012f40a" width = "750" height = "500" />
 
 
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/85f8b8ee-c2c0-441f-9545-7db3e6bda4ee" width = "1200" height = "200" />
 
 
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/6b01b28a-9e22-4898-bfea-c0869b5b67ab" width = "1200" height = "200" />
 
 
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/82a07522-66bc-4c96-9c4a-633639823943" width = "1200" height = "200" />
 
 
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/5e45021e-cb43-4d5f-a238-ca8375c99568" width = "1200" height = "200" />
 
 
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/e12b55b0-430f-4c54-9429-273ea145a18c" width = "1200" height = "200" />
 
 
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/ee8d4259-ad32-4b57-af00-eb089e4f1442" width = "1200" height = "200" />
 
-
-
-
+Including the digital elevation model in the second dataset and training the model for 100 epochs, double the epochs of the first experiment, unfortunately, does not achieve  significant improvements. While the model effectively classifies most water and land cover types, it struggles with challenging land cover like sand, which shares similar backscatter properties with water bodies. Despite this limitation, the visually accurate generated water masks underscore the superiority of the supervised learning approach over the self-supervised approach (cGAN) utilized in this project.
 
 
 ##### 2.3.2 **New Study Area Catagory**<a name ="new_study_dem"></a>:
