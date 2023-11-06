@@ -50,6 +50,7 @@ The [discriminator](https://github.com/MuhammedM294/SAR2Optical/blob/ff48411b856
 |---------------------------|---------------------------------------------------------------------|
 | **Input Channels**        | 1 (Generator), 2 (Discriminator)                                    |
 | **Output Channels**       | 1 (for both Generator and Discriminator)                                                  |
+| **Patch Size**       | 512 x 512                                                               |
 | **Training Epochs**       | 50                                                                  |
 | **GPU**                   | NVIDIA GeForce GTX 1660 Ti                                        |
 | **Generator**             | UNet Architecture                                                  |
@@ -62,10 +63,14 @@ The [discriminator](https://github.com/MuhammedM294/SAR2Optical/blob/ff48411b856
 
 
 
-#### 1.4 Results Samples <a name ="b8_result"></a>:
+#### 1.4 Results Samples (Patch Level)<a name ="b8_result"></a>:
 ##### 1.4.1 Temporal Variations Catagory<a name ="temp"></a>:
 
+1. Wadi El Rayan Lakes (Southwest of Cairo, Egypt),  Acquisition Date: 09-12-2021
 
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/0fbcf516-451f-4376-9f4d-7ebccab7520c" width = "750" height = "500" />
+
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/7cee60b8-5621-4326-9969-e7a58d91a8ab" width = "750" height = "250" />
 
 
 
