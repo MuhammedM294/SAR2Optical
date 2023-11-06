@@ -20,6 +20,10 @@ This project leverages the power of a cutting-edge technique called Conditional 
   - [**Results Samples**](#b8__dem_result)
       - [**Temporal Variations**](#temp_dem)
       - [**New Study Area**](#new_study_dem)
+- [**Installation**](#install)
+- [**Citing**](#citing)
+- [**Contributing**](#contribute)
+- [**License**](#lic)
   
 ### Study Area <a name="study_area"></a>
 
@@ -179,8 +183,73 @@ Including the digital elevation model in the second dataset and training the mod
 
 ##### 2.3.2 **New Study Area Catagory**<a name ="new_study_dem"></a>:
 
+Siwa Lakes, Western Egypt
+
+Sentinel-2 , Acquisation Date 04-12-2021
+
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/bd1b7f11-7eb8-40a1-ad0a-9588956a9fa8" width = "900" height = "400" />
 
 
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/cbe24e0c-1f19-48e0-b3cf-3f82f8e18ef6" width = "1200" height = "200" />
+
+
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/084e71cb-a502-4268-aec7-2edfbca4ffe4" width = "1200" height = "200" />
+
+
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/3c58ec27-6a57-4f65-998f-5525a19a11c7" width = "1200" height = "200" />
+
+
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/b1008ab9-211b-4bc8-9978-162e3207e63d" width = "1200" height = "200" />
+
+
+
+
+## Installation  <a name="install"></a>
+1. Clone the repository:
+   ``` shell
+   git clone https://github.com/MuhammedM294/SAR2Optical
+   ```
+   
+2. Change to the project directory:
+   ``` shell
+   cd SAR2Optical
+   ```
+   
+3. Setting up an environment to run the project:
+   ``` shell
+     conda create --n <environment-name> 
+     conda activate <environment-name>
+   ```
+   
+4. Install the required dependencies::
+ ``` shell
+     pip install -r requirements.txt
+ ```
+
+
+
+##  Citing  <a name="citing"></a>
+```
+{
+  Author = {Muhammed Abdelaal},
+  Title = {SAR-to-Optical Image transcoding for Mapping Water Bodies in Arid Region},
+  Year = {2023},
+  Publisher = {GitHub},
+  Journal = {GitHub repository},
+  Howpublished = {\url{https://github.com/MuhammedM294/SAR2Optical}}
+}
+```
+
+
+## Contributing <a name="contribute"></a>
+
+Contributions to this project are welcome. If you find any issues or have suggestions for improvements, please open a new issue or submit a pull request.
+
+
+
+### License <a name="lic"></a>
+
+This project is licensed under the MIT License.
 
 
 
