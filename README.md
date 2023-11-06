@@ -66,7 +66,9 @@ The [discriminator](https://github.com/MuhammedM294/SAR2Optical/blob/ff48411b856
 #### 1.4 Results Samples (Patch Level)<a name ="b8_result"></a>:
 ##### 1.4.1 Temporal Variations Catagory<a name ="temp"></a>:
 
-1. Wadi El Rayan Lakes (Southwest of Cairo, Egypt),  Acquisition Date: 09-12-2021
+*Wadi El Rayan Lakes* (Southwest of Cairo, Egypt)
+
+*Sentinel-2*, Acquisition Date: 09-12-2021
 
 <img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/0fbcf516-451f-4376-9f4d-7ebccab7520c" width = "750" height = "500" />
 
@@ -86,12 +88,31 @@ The [discriminator](https://github.com/MuhammedM294/SAR2Optical/blob/ff48411b856
 <img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/a2cba8d0-8215-41dc-9f07-335c57f3511e" width = "900" height = "300" />
 
 
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/2cceeab6-c18f-4b42-81d0-bd558389ce79" width = "900" height = "300" />
+
+
+
 In the showcased samples, the generator model effectively translates waterbodies from SAR imagery to the optical NIR band. While successful in this task, challenges persist, particularly in distinguishing certain land cover types, such as sandy areas, which exhibit backscattering patterns similar to water bodies.
 
+##### 1.4.2 **New Study Area Catagory**<a name ="new_study"></a>:
+
+*These lakes are located along Egypt's western border shared with Libya*
+
+*Sentinel-2*, Acquisition Date: 03-12-2021
+
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/1d8b4ac4-53f8-466f-841f-d126b8b8baa5" width = "750" height = "500" />
 
 
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/d739a0ff-f649-4b09-ae77-1e537be965ae" width = "900" height = "300" />
 
 
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/1d989bd8-e1f6-4096-9d59-a666e659aa68" width = "900" height = "300" />
+
+
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/03a0dc1e-eec7-485f-87ab-bf8a64dbaddb" width = "900" height = "300" />
+
+
+In this testing dataset category, the model exhibited poor performance in distinguishing both waterbodies and other land cover types. Challenges still persist in accurately classifying these categories.
 
 --------
 
