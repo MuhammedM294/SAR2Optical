@@ -11,6 +11,7 @@ This project leverages the power of a cutting-edge technique called Conditional 
    - [**Dataset**](#b8_dataset)
    - [**Dataset Samples**](#dataset_samples)
    - [**Training Configuration**](#train_config)
+   - [**Results Samples**](#b8_result)
 
 ### Study Area <a name="study_area"></a>
 
@@ -45,19 +46,21 @@ The [discriminator](https://github.com/MuhammedM294/SAR2Optical/blob/ff48411b856
 
 | **Component**             | **Architecture**                                                   |
 |---------------------------|---------------------------------------------------------------------|
-| **Optimizer (Generator)** | Adam (lr=0.0002, betas=(0.5, 0.999))                                |
-| **Optimizer (Discriminator)** | Adam (lr=0.0002, betas=(0.5, 0.999))                            |
+| **Input Channels**        | 1 (Generator), 2 (Discriminator)                                    |
+| **Output Channels**       | 1 (for both Generator and Discriminator)                                                  |
 | **Training Epochs**       | 50                                                                  |
 | **GPU**                   | NVIDIA GeForce GTX 1660 Ti                                        |
 | **Generator**             | UNet Architecture                                                  |
 | **Downsampling Layers**   | 2D Convolution, LeakyReLU (slope: 0.2), Optional Dropout, Instance Normalization |
 | **Upsampling Layers**     | Transpose Convolution, ReLU Activation, Instance Normalization      |
 | **Discriminator**         | Convolutional Blocks with LeakyReLU (slope: 0.2) and Instance Normalization |
-| **Input Channels**        | 1 (Generator), 2 (Discriminator)                                    |
-| **Output Channels**       | 1 (for both Generator and Discriminator)                                                  |
+| **Optimizer (Generator)** | Adam (lr=0.0002, betas=(0.5, 0.999))                                |
+| **Optimizer (Discriminator)** | Adam (lr=0.0002, betas=(0.5, 0.999))                            |
 
 
 
+
+#### 1.4 Results Samples <a name ="b8_result"></a>:
 
 
 
