@@ -70,7 +70,7 @@ The [discriminator](https://github.com/MuhammedM294/SAR2Optical/blob/ff48411b856
 
 <img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/0fbcf516-451f-4376-9f4d-7ebccab7520c" width = "750" height = "500" />
 
-<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/7cee60b8-5621-4326-9969-e7a58d91a8ab" width = "750" height = "250" />
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/7cee60b8-5621-4326-9969-e7a58d91a8ab" width = "1000" height = "500" />
 
 
 
