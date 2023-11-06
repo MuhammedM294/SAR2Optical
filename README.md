@@ -7,14 +7,20 @@ This project leverages the power of a cutting-edge technique called Conditional 
 
 ## Table of Contents
 - [**Study Area**](#study_area)
-- [**Experiment 1:Transcoding Sentinel-1 SAR Image VV Band to NIR Band of Sentinel-2**](#vv_b8)
+- [**Experiment 1: Transcoding Sentinel-1 SAR Image VV Band to NIR Band of Sentinel-2**](#vv_b8)
    - [**Dataset**](#b8_dataset)
    - [**Dataset Samples**](#dataset_samples)
    - [**Training Configuration**](#train_config)
    - [**Results Samples**](#b8_result)
       - [**Temporal Variations**](#temp)
       - [**New Study Area**](#new_study)
-
+- [**Experiment 2: Transcoding Sentinel-1 SAR Image VV Band + DEM to NIR Band of Sentinel-2 + Water Mask**](#vv_b8_dem)
+  - [**Dataset**](#b8_dem_dataset)
+  - [**Training Configuration**](#train_dem_config)
+  - [**Results Samples**](#b8__dem_result)
+      - [**Temporal Variations**](#temp_dem)
+      - [**New Study Area**](#new_study_dem)
+  
 ### Study Area <a name="study_area"></a>
 
 The study area consists of seven distinct water bodies situated within Egypt, spanning across its vast desert landscape. The choice of these waterbodies is deliberate. Their strategic location amidst sandy terrain provides an ideal and complex setting for the research problem.
@@ -113,6 +119,61 @@ In the showcased samples, the generator model effectively translates waterbodies
 
 
 In this testing dataset category, the model exhibited poor performance in distinguishing both waterbodies and other land cover types. Challenges still persist in accurately classifying these categories.
+
+
+
+
+### Experiment 2: Transcoding Sentinel-1 SAR Image VV Band + DEM to NIR Band of Sentinel-2 + Water Mask <a name ="vv_b8_dem"></a>
+
+In this experiment, the generator architecture is enhanced by integrating digital elevation data with the VV band of SAR images as inputs. The output includes the NIR band optical data and a water mask extracted from the VV band of the SAR image. This modification represents a significant step forward, combining multiple data sources to improve the accuracy and richness of our model's output.
+
+#### 2.1 Dataset <a name ="b8_dem_dataset"></a>
+
+For this experiment, the same dataset is utilized as in the first study, incorporating digital elevation models specific to each study area. By integrating these elevation data alongside the VV band of SAR images, our model generated outputs comprising NIR band optical data and water masks extracted from the SAR imagery. 
+
+#### 2.2 Training Configuration <a name ="train_dem_config"></a>
+
+| **Component**             | **Architecture**                                                   |
+|---------------------------|---------------------------------------------------------------------|
+| **Input Channels**        | 2 (Generator), 4 (Discriminator)                                    |
+| **Output Channels**       | 2 (Generator), 1  Discriminator)                                            |
+| **Patch Size**       | 512 x 512                                                               |
+| **Training Epochs**       | 100                                                                |
+| **GPU**                   | NVIDIA GeForce GTX 1660 Ti                                        |
+| **Generator**             | UNet Architecture                                                  |
+| **Downsampling Layers**   | 2D Convolution, LeakyReLU (slope: 0.2), Optional Dropout, Instance Normalization |
+| **Upsampling Layers**     | Transpose Convolution, ReLU Activation, Instance Normalization      |
+| **Discriminator**         | Convolutional Blocks with LeakyReLU (slope: 0.2) and Instance Normalization |
+| **Optimizer (Generator)** | Adam (lr=0.0002, betas=(0.5, 0.999))                                |
+| **Optimizer (Discriminator)** | Adam (lr=0.0002, betas=(0.5, 0.999))                            |
+
+#### 2.3 Results Samples (Patch Level)<a name ="b8__dem_result"></a>:
+##### 2.3.1 Temporal Variations Catagory<a name ="temp_dem"></a>:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##### 2.3.2 **New Study Area Catagory**<a name ="new_study_dem"></a>:
+
+
+
+
+
 
 --------
 
