@@ -71,11 +71,22 @@ The [discriminator](https://github.com/MuhammedM294/SAR2Optical/blob/ff48411b856
 <img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/0fbcf516-451f-4376-9f4d-7ebccab7520c" width = "750" height = "500" />
 
 
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/50797395-5945-4c67-b4bf-d658fc3a2159" width = "900" height = "300" />
 
-<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/7cee60b8-5621-4326-9969-e7a58d91a8ab" width = "900" height = "300" />
 
-<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/35adaa82-625c-4ffb-9f6f-0c21fd9106ec" width = "900" height = "300" />
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/1f32fc8c-eef6-42f6-9e35-0f61395b8355" width = "900" height = "300" />
 
+
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/f534dca0-91f5-4abe-a0e9-2cb3c18bfc36" width = "900" height = "300" />
+
+
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/f8a6c5ca-14b5-4533-9f6a-670bc102a470" width = "900" height = "300" />
+
+
+<img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/a2cba8d0-8215-41dc-9f07-335c57f3511e" width = "900" height = "300" />
+
+
+In the showcased samples, the generator model effectively translates waterbodies from SAR imagery to the optical NIR band. While successful in this task, challenges persist, particularly in distinguishing certain land cover types, such as sandy areas, which exhibit backscattering patterns similar to water bodies.
 
 
 
