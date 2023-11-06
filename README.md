@@ -12,6 +12,8 @@ This project leverages the power of a cutting-edge technique called Conditional 
    - [**Dataset Samples**](#dataset_samples)
    - [**Training Configuration**](#train_config)
    - [**Results Samples**](#b8_result)
+      - [**Temporal Variations**](#temp)
+      - [**New Study Area**](#new_study)
 
 ### Study Area <a name="study_area"></a>
 
@@ -61,6 +63,7 @@ The [discriminator](https://github.com/MuhammedM294/SAR2Optical/blob/ff48411b856
 
 
 #### 1.4 Results Samples <a name ="b8_result"></a>:
+##### 1.4.1 Temporal Variations Catagory<a name ="temp"></a>:
 
 
 
