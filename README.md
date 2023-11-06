@@ -9,6 +9,7 @@ This project leverages the power of a cutting-edge technique called Conditional 
 - [**Study Area**](#study_area)
 - [**Experiment 1:Transcoding Sentinel-1 SAR Image VV Band to NIR Band of Sentinel-2**](#vv_b8)
    - [**Dataset**](#b8_dataset)
+   - [**Dataset Samples**](#dataset_samples)
 
 ### Study Area <a name="study_area"></a>
 
@@ -22,14 +23,18 @@ The study area consists of seven distinct water bodies situated within Egypt, sp
 The first experiment focuses on transcoding Sentinel-1 (SAR) imagery from the VV (vertical-vertical) polarization band to the Near-Infrared (NIR) band of Sentinel-2 optical imagery. The goal is to explore the feasibility of utilizing NIR data, which is sensitive to water content, to enhance the discrimination between waterbodies and sand landcover in arid regions. 
 
 
+
+#### 1.1 Dataset <a name ="b8_dataset"></a>: 
+In this experiment, a pair of SAR-Optical datasets were created from the Sentinel-1 SAR VV band  and the NIR band of Sentinel-2 satellite imagery. The training dataset comprises paired images covering the designated study area, acquired in 2020, with a high spatial resolution of 30 meters. The testing consists of two main categories:
+1. New study areas: This category includes images from study areas not part of the training dataset to evaluate the model's ability to generalize and produce accurate results in unfamiliar landscapes.
+2. Temporal Variations: This included images from the same study area captured in different years to examine how well the model handles changes over time within a specific location. It's a crucial test to ensure the model's consistency and adaptability across various temporal contexts.
+
+#### 1.2 Dataset Samples<a name ="dataset_samples"></a>:
 **Our Source: Sentinel-1 SAR VV Band (Toushka Lakes, Southern Egypt), Acquisition Date: 06-12-2021**
 <img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/11d51ae8-2734-4925-8589-f31bfbd93a89" width = "800" height = "600" />
 
 **Our Target: Sentinel-2 NIR Band (Toushka Lakes, Southern Egypt), Acquisition Date: 04-12-2021**
 <img src= "https://github.com/MuhammedM294/SAR2Optical/assets/89984604/ab0a7f63-cf29-4a8b-9a45-127e40a324c4" width = "800" height = "600" />
-
-#### 1.1 Dataset <a name ="b8_dataset"></a>: 
-In this experiment, a pair of SAR-Optical datasets were created from the Sentinel-1 SAR VV band  and the NIR band of Sentinel-2 satellite imagery. The training dataset comprises paired images covering the designated study area, acquired in 2020, with a high spatial resolution of 30 meters. The testing dataset consists of images captured over the same study area in 2021. The primary goal is to assess the model's capability in identifying temporal changes, particularly focusing on waterbody expansion or shrinkage between the two years.
 
 
 
